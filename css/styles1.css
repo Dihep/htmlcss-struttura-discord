@@ -1,9 +1,35 @@
-/* Universal styles */
+/***** Universal styles *****/
 * {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
+header, 
+main, 
+footer {
+    margin: 0% 20%;
+}
 .flex-container {
     display: flex;
+}
+
+/***** Header styles *****/
+header {
+    background-color: blue;
+    height: 15rem;
+}
+header>nav {
+    background-color: aquamarine;
+    height: 20%;
+    justify-content: center;
+}
+.nav-label{
+    background-color: orange;
+    border: dotted black;
+    height: 80%;
+    width: 10%;
+    margin: auto 0%;
+}
+header>nav:nth-child(2) {
+    width: 40%;
 }
