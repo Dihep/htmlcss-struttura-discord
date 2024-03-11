@@ -4,9 +4,11 @@
     margin: 0%;
     padding: 0%;
 }
-
 .flex-container {
     display: flex;
+}
+:root {
+    --fbg-color: rgb(60, 60, 60);
 }
 
 /***** Header styles *****/
@@ -67,4 +69,36 @@ main>section>div {
 .big-green {
     background-color: green;
     width: 60%;
+}
+
+/***** Footer styles *****/
+footer>section:first-child {
+    background-color: var(--fbg-color);
+    height: 15rem;
+    justify-content: center;
+    padding: 2% 10% 5%;
+}
+
+footer>section:last-child {
+    background-color: var(--fbg-color);
+    height: 3rem;
+    margin-top: 2px;
+}
+.f-red,
+.f-aqua {
+    height: 100%;
+}
+.f-red {
+    width: 20%;
+    background-color: rgb(255, 72, 72);
+    border: dotted black;
+}
+.aqua-container {
+    border: dotted black;
+    width: 40%;
+}
+.f-aqua {
+    width: 25%;
+    background-color: aqua;
+    border: dotted white;
 }
