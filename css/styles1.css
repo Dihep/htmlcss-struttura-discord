@@ -4,32 +4,67 @@
     margin: 0%;
     padding: 0%;
 }
-header, 
-main, 
-footer {
-    margin: 0% 20%;
-}
+
 .flex-container {
     display: flex;
 }
 
 /***** Header styles *****/
 header {
-    background-color: blue;
+    background-color: aquamarine;
     height: 15rem;
 }
 header>nav {
-    background-color: aquamarine;
     height: 20%;
     justify-content: center;
 }
 .nav-label{
     background-color: orange;
     border: dotted black;
+    margin: auto 0%;
+    padding: auto 0%;
     height: 80%;
     width: 10%;
-    margin: auto 0%;
+    text-align: center;
 }
-header>nav:nth-child(2) {
-    width: 40%; /* <---- ISSUE*/
+header>nav>div:nth-child(2) {
+    width: 40%;
+}
+
+header>section {
+    background-color: blue;
+    height: 79%;
+    padding: 1.5rem 25%;
+
+}
+header>section>div {
+    background-color: magenta;
+    height: 100%;
+    width: 100%;
+}
+
+/***** Main styles *****/
+main>section {
+    height: 15rem;
+    padding: 5% 0%;
+    justify-content: center;
+}
+main>section:nth-child(even) {
+    background-color: lightgray
+}
+main>section>div {
+    border: dotted black;
+    height: 100%;
+}
+.big-blue {
+    background-color: rgb(50, 90, 255);
+    width: 40%;
+}
+.small-pink {
+    background-color: pink;
+    width: 20%;
+}
+.big-green {
+    background-color: green;
+    width: 60%;
 }
