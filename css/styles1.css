@@ -31,5 +31,5 @@ header>nav {
     margin: auto 0%;
 }
 header>nav:nth-child(2) {
-    width: 40%;
+    width: 40%; /* <---- ISSUE*/
 }
