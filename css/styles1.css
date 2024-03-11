@@ -76,13 +76,14 @@ footer>section:first-child {
     background-color: var(--fbg-color);
     height: 15rem;
     justify-content: center;
-    padding: 2% 10% 5%;
+    padding: 2% 0% 5%;
 }
 
 footer>section:last-child {
     background-color: var(--fbg-color);
     height: 3rem;
     margin-top: 2px;
+    padding: 1rem 20% 0%;
 }
 .f-red,
 .f-aqua {
@@ -101,4 +102,14 @@ footer>section:last-child {
     width: 25%;
     background-color: aqua;
     border: dotted white;
+}
+.bottom-footer {
+    background-color: aquamarine;
+    height: 2rem;
+    justify-content: space-between;
+    padding: 0.3rem 0%;
+}
+.bottom-footer>div {
+    background-color: pink;
+    border: dotted black;
 }
