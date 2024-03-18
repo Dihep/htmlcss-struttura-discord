@@ -12,63 +12,77 @@
 
 <body>
 
-    <!-- Light-colored header with two sections -->
+    <!-- Blue-colored header with two sections (one with different background)-->
     <header>
 
-        <nav class="flex-container">
-            <div class="nav-label">logo</div>
-            <div class="nav-label">link link link link link</div>
-            <div class="nav-label">login</div>
-        </nav>
-
-        <section class="h-blue">
-            <div class="h-pink"></div>
+        <!-- First section with container -->
+        <section>
+            <nav class="boxed flexed bordered">
+                <div class="bordered">logo</div>
+                <div class="bordered nav-links">link link link link link</div>
+                <div class="bordered">login</div>
+            </nav>
         </section>
+
+        <!-- Second section -->
+        <section class="bordered"></section>
 
     </header>
 
-    <!-- Main content in multiple sections -->
+
+    <!-- Main content in multiple sections with different backgrounds -->
     <main>
 
-        <section class="flex-container">
-            <div class="big-blue"></div>
-            <div class="small-pink"></div>
+        <!-- Sections have containers for content, background is given by selectors -->
+        <section>
+            <div class="boxed flexed">     
+                <div class="big-section-content bordered"></div>
+                <div class="small-m_section-content bordered"></div>
+            </div>
         </section>
 
-        <section class="flex-container">
-            <div class="small-pink"></div>
-            <div class="big-blue"></div>
+        <section> <!-- Gray background -->
+            <div class="boxed flexed">
+                <div class="small-section-content bordered"></div>
+                <div class="big-m_section-content bordered"></div>
+            </div>
         </section>
         
-        <section class="flex-container">
-            <div class="big-blue"></div>
-            <div class="small-pink"></div>
+        <section>
+            <div class="boxed flexed">
+                <div class="big-section-content bordered"></div>
+                <div class="small-m_section-content bordered"></div>
+            </div>
         </section>
 
-        <section class="flex-container">
-            <div class="big-green"></div>
+        <section> <!-- Gray background -->
+            <div class="boxed">
+                <div class="huge-m_section-content bordered"></div>
+            </div>
         </section>
 
     </main>
 
+
     <!-- Dark footer in two sections -->
     <footer>
 
-        <section class="flex-container">
-            <div class="f-red"></div>
-            <div class="aqua-container flex-container">
-                <div class="f-aqua"></div>
-                <div class="f-aqua"></div>
-                <div class="f-aqua"></div>
-                <div class="f-aqua"></div>
+        <section>
+            <div class="boxed flexed bordered"> <!-- Content container -->
+                <div class="big-footer-content bordered"></div>
+                <div class="flexed bordered"> <!-- Content sub-container -->
+                    <div class="small-footer-content bordered-white"></div>
+                    <div class="small-footer-content bordered-white"></div>
+                    <div class="small-footer-content bordered-white"></div>
+                    <div class="small-footer-content bordered-white"></div>
+                </div>
             </div>
-            
         </section>
 
-        <section>
-            <div class="flex-container bottom-footer">
-                <div class="f-labels">Logo</div>
-                <div class="f-labels">Bottone</div>
+        <section class="footer-end"> <!-- Final footer section, with top border -->
+            <div class="boxed flexed"> <!-- Content container -->
+                <div class="bottom-footer-content bordered">Logo</div>
+                <div class="bottom-footer-content bordered">Bottone</div>
             </div>
         </section>
 
